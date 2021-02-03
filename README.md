@@ -1,4 +1,4 @@
-# manager-breakfast-api
+# breakfast-management-api
 Application that manager any breakfast
 
 
