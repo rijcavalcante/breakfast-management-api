@@ -14,7 +14,7 @@
 	<name>breakfast-management-api</name>
 	<description>Application that manager any breakfast</description>
 	<properties>
-		<java.version>11</java.version>
+		<!--<java.version>12</java.version>-->
 	</properties>
 	<dependencies>
 		<dependency>
