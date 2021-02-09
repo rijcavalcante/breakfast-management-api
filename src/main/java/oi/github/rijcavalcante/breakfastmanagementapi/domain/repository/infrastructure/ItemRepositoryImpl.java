@@ -1,5 +1,7 @@
 package oi.github.rijcavalcante.breakfastmanagementapi.domain.repository.infrastructure;
 
+import java.util.List;
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
@@ -18,7 +20,11 @@ public class ItemRepositoryImpl implements ItemRepository {
 	@Override
 	@Transactional
 	public void addItem(Item item) {
-		// TODO Auto-generated method stub
 		manager.merge(item);
+	}
+
+	@Override
+	public List<Item> queryItens() {
+		return manager.createQuery("from Item", Item.class).getResultList();
 	}
 }
